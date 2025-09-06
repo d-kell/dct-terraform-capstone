@@ -1,0 +1,9 @@
+{
+  "terraform.languageServer.enabled": true,
+  "terraform.languageServer.rootModules": [
+    "environments/dev",
+    "environments/staging",
+    "environments/prod"
+  ]
+}
+
