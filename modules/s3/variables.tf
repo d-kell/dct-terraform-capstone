@@ -12,7 +12,7 @@ variable "tags" {
 variable "force_destroy" {
   description = "Allow bucket to be destroyed even if non-empty"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "versioning" {
