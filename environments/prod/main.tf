@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "resilient"
+    workspaces { name = "dct-terraform-capstone-prod" }
+  }
+}
+
+terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -7,7 +14,9 @@ terraform {
   }
 }
 
-provider "aws" {}
+provider "aws" {
+  region = var.region
+}
 
 module "vpc" {
   source     = "../../modules/vpc"

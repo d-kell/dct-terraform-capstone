@@ -27,7 +27,7 @@ variable "block_public" {
   default = true
 }
 
-# AES256 or "aws:kms"
+# AES256 or can also be kms
 variable "sse_algorithm" {
   type    = string
   default = "AES256"

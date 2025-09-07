@@ -10,11 +10,12 @@
 crash.log
 crash.*.log
 
-# TFVARS files, except example.tfvars
+# TFVARS files, except example.tfvars and .auto.tfvars
 *.tfvars
 *.tfvars.json
 !example.tfvars
 !example.tfvars.json
+!*.auto.tfvars
 
 # Override files
 override.tf

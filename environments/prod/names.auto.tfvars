@@ -1,3 +1,3 @@
-project        = "capstone-prod"
-tags           = { Environment = "prod" }
-name           = "prod-capstone"
+project = "capstone-prod"
+tags    = { Environment = "prod" }
+name    = "prod-capstone"
