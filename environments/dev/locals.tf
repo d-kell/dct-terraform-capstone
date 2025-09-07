@@ -1,4 +1,4 @@
-# locals for user data
+# locals for user data. Set's it up as a webserver with python installed
 locals {
   user_data = templatefile("${path.module}/user_data.tftpl", {
     packages = [
